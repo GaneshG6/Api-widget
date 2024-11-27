@@ -1,0 +1,76 @@
+body {
+  color: #333333;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(90deg, #e2e2e2, #c9d6ff);
+}
+.screen {
+  min-height: 100vh;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.color-border {
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #7494ec;
+}
+.login-inner-container {
+  display: flex;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+/* Sidebar styles */
+.sidebar {
+  display: none;
+  width: 300px;
+  background-color: #fff;
+  padding: 10px;
+}
+
+.sidebar.visible {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: absolute;
+}
+
+.sidebar.hidden {
+  display: none;
+}
+
+/* Main content styles */
+#main {
+  transition: margin-left 0.3s ease;
+  margin-left: 0;
+  padding: 24px;
+  height: 100vh;
+  overflow: auto;
+}
+
+#main.sidebar-open {
+  margin-left: 300px;
+}
+
+@media only screen and (max-width: 768px) {
+  #main.sidebar-open {
+    margin-left: 0;
+  }
+  .sidebar {
+
+    width: 80%;
+
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+

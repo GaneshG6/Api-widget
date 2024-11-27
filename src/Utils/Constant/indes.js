@@ -1,0 +1,1 @@
+export const loggedinUsers = [{ email: "user@example.com", password: "Password@123" }];

@@ -1,0 +1,14 @@
+.form-control:focus {
+    color: #333333;
+    background-color: #fff;
+    border-color: #7494ec;;
+    outline: 0;
+    box-shadow: none
+}
+
+.form-control-lg {
+    min-height: calc(1.5em + 1rem + 2px);
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border-radius: .5rem;
+}
